@@ -17,7 +17,13 @@ Install this starter (assuming Gatsby is installed) by running from your CLI:
 
 `gatsby new gatsby-store https://github.com/harshil1712/gatsby-store-hackathon`
 
-### Running in development
+### Install using Yarn
+
+install packages using yarn with yarn install, and then to start the development server run 
+
+`gatsby develop` 
+
+### Running in development using NPM
 
 `npm run develop`
 
