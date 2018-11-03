@@ -1,31 +1,30 @@
 # Gatsby Starter eCommerce
 
-Gatsby starter for creating an eCommerce site using [Moltin eCommerce Api ](https://moltin.com/).
-
-This starter adapts an [existing](https://github.com/moltin-examples/nextjs-demo-store) NextJS eCommerce starter for [GatsbyJS](https://www.gatsbyjs.org/).
-
 Demo: <https://parmsang.github.io/gatsby-starter-ecommerce/>
 
 
-## Warning
-
-This starter is currently work in progress
 
 ## Getting started
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+Install the Gatsby CLI (refer Gatsby docs)
 
-`gatsby new gatsby-store https://github.com/harshil1712/gatsby-store-hackathon`
+Clone this repo
 
-### Install using Yarn
+### Package Installation
 
-install packages using yarn with yarn install, and then to start the development server run 
+If you don't have yarn install, install yarn.
 
-`gatsby develop` 
+once yarn is installed, go to the project directory and run 
 
-### Running in development using NPM
+`yarn install`
 
-`npm run develop`
+this will install all the packages
+
+
+### Running in development
+
+to run the development server use
+`gatsby develop`
 
 ### Additional Setup
 
