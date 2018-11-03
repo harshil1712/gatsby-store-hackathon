@@ -15,7 +15,7 @@ This starter is currently work in progress
 
 Install this starter (assuming Gatsby is installed) by running from your CLI:
 
-`gatsby new gatsby-store https://github.com/parmsang/gatsby-starter-ecommerce`
+`gatsby new gatsby-store https://github.com/harshil1712/gatsby-store-hackathon`
 
 ### Running in development
 
