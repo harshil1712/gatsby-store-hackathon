@@ -6,25 +6,62 @@ Demo: <https://parmsang.github.io/gatsby-starter-ecommerce/>
 
 ## Getting started
 
-Install the Gatsby CLI (refer Gatsby docs)
+Install the Gatsby CLI (click [here](https://www.gatsbyjs.org/tutorial/part-zero/#install-the-gatsby-cli))
 
-Clone this repo
+Clone the repo. Hit the following command to clone the repo
+`git clone https://github.com/harshil1712/gatsby-store-hackathon.git `
 
 ### Package Installation
 
-If you don't have yarn install, install yarn.
+To install packages
 
-once yarn is installed, go to the project directory and run 
+- If you have yarn installed
 
-`yarn install`
+    `yarn install`
 
-this will install all the packages
+- or if you have npm
+
+    `npm install`
 
 
 ### Running in development
 
-to run the development server use
+Run the development server
+
 `gatsby develop`
+
+After successful build you will see the following message
+
+```
+You can now view gatsby-starter-ecommerce in the browser.
+
+  http://localhost:8000/
+
+View GraphiQL, an in-browser IDE, to explore your site's data and schema
+
+  http://localhost:8000/___graphql
+
+Note that the development build is not optimized.
+To create a production build, use gatsby build
+```
+
+Opne your browser and go to `http://localhost:800` and you will see website
+
+## Working With Git
+
+Before you start making changes remember to create a new branch
+
+`git checkout -b BRANCH_NAME`
+
+Make all the changes (you will see the live changes, you don't have to restart the server again)
+
+After you are done with the changes 
+
+`git add .`
+
+`git commit -m "COMMIT MESSAGE"`
+
+`git push -u origin BRANCH_NAME`
 
 ### Additional Setup
 
