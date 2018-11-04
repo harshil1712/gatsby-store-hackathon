@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import Link, { withPrefix } from 'gatsby-link'
-import { Menu, Container, Icon } from 'semantic-ui-react'
+import { Menu, Header, Container, Icon } from 'semantic-ui-react'
 import ShoppingCartIcon from './ShoppingCartIcon'
 import Logo from './Logo'
-
+import Search from './Search'
 class DesktopMenu extends Component {
   state = {
     activeItem: this.props.location.pathname,
@@ -33,8 +33,9 @@ class DesktopMenu extends Component {
             header
           >
             <Logo />
-            Starter Store
+            <Header style={headerStyle} as='h1'>MagiKart</Header>
           </Menu.Item>
+          <Search />
           {token ? (
             <Menu.Menu position="right">
               <Menu.Item
@@ -68,6 +69,7 @@ class DesktopMenu extends Component {
                 active={activeItem === withPrefix('/login/')}
               >
                 Sign in
+
               </Menu.Item>
               <Menu.Item
                 as={Link}
@@ -84,4 +86,7 @@ class DesktopMenu extends Component {
   }
 }
 
+const headerStyle ={
+  margin: 0,
+}
 export default DesktopMenu
