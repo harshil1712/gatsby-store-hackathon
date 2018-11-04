@@ -67,6 +67,21 @@ const Footer = () => (
                   </a>
                 }
               />
+              <List.Item content={
+                
+                <form action="https://formspree.io/cremona.matei19@gmail.com" method="POST">
+        
+                <label for="name">Name:</label>
+                
+                <input type="text" name="name" placeholder="Name" style={{display: `block`, margin: `auto`}}/>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="_replyto" placeholder="Email" style={{display: `block`, margin: `auto`}}/>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="10" cols="33"></textarea>
+                
+                <button type="submit" value="submit">Send</button></form>
             </List>
           </Grid.Column>
         </Grid.Row>
