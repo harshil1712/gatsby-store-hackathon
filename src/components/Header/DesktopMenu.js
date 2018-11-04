@@ -24,7 +24,7 @@ class DesktopMenu extends Component {
     const { activeItem } = this.state
     const { token, cartCount } = this.props
     return (
-      <Menu size="huge" borderless pointing>
+      <Menu style={navbarStyle.headerColor} size="huge" borderless pointing>
         <Container text>
           <Menu.Item
             active={activeItem === withPrefix('/')}
@@ -33,7 +33,7 @@ class DesktopMenu extends Component {
             header
           >
             <Logo />
-            <Header style={headerStyle} as='h1'>MagiKart</Header>
+            <Header style={navbarStyle.headerStyle} as='h1'>MagiKart</Header>
           </Menu.Item>
           <Search />
           {token ? (
@@ -61,12 +61,13 @@ class DesktopMenu extends Component {
                 to="/magik/"
                 active={activeItem === withPrefix('/magik/')}
               >
-                Magik
+              Magik
               </Menu.Item>
               <Menu.Item
                 as={Link}
                 to="/register/"
                 active={activeItem === withPrefix('/register/')}
+                style={navbarStyle.textColor}
               >
                 Sign up
               </Menu.Item>
@@ -74,6 +75,7 @@ class DesktopMenu extends Component {
                 as={Link}
                 to="/login/"
                 active={activeItem === withPrefix('/login/')}
+                style={navbarStyle.textColor}
               >
                 Sign in
 
@@ -82,6 +84,7 @@ class DesktopMenu extends Component {
                 as={Link}
                 to="/cart/"
                 active={activeItem === withPrefix('/cart/')}
+                style={navbarStyle.textColor}
               >
                 <ShoppingCartIcon cartCount={cartCount} name="Cart" />
               </Menu.Item>
@@ -92,8 +95,17 @@ class DesktopMenu extends Component {
     )
   }
 }
-
-const headerStyle ={
-  margin: 0,
+const navbarStyle ={
+  headerStyle: {
+    margin: 0,
+    color: '#fff',
+  },
+  headerColor: {
+    backgroundColor: '#1c211e',
+  },
+  textColor: {
+    color: '#fff',
+  }
 }
+
 export default DesktopMenu
