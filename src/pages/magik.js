@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Clarifai from 'clarifai'
-import '../styles/upload.css'
+import '../css/style.css'
 
 const app = new Clarifai.App({ apiKey: '2d7718ce14934d9194e650c3d371394a' })
 
