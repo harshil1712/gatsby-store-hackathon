@@ -80,7 +80,12 @@ export default class Login extends React.Component {
               error={!!errors}
             >
               {errors ? this.handleErrors(errors) : null}
-              <Segment>
+              <Segment
+               style={{
+                border: `2px solid rgba(0, 0, 26, 0.7)`,
+                background: `rgb(153, 187, 255)`,
+                }}
+>
                 <Form.Field>
                   <label htmlFor="email">Email</label>
                   <Input
@@ -106,7 +111,7 @@ export default class Login extends React.Component {
                   />
                 </Form.Field>
 
-                <Button type="submit" color="orange">
+                <Button type="submit" color="blue" style={{display: `block`, margin: `auto`}}>
                   Login
                 </Button>
               </Segment>
