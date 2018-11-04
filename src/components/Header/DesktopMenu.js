@@ -33,7 +33,7 @@ class DesktopMenu extends Component {
             header
           >
             <Logo />
-            <Header as='h1'>MagiKart</Header>
+            <Header style={headerStyle} as='h1'>MagiKart</Header>
           </Menu.Item>
           <Search />
           {token ? (
@@ -86,4 +86,7 @@ class DesktopMenu extends Component {
   }
 }
 
+const headerStyle ={
+  margin: 0,
+}
 export default DesktopMenu

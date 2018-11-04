@@ -30,7 +30,7 @@ class Search extends React.Component{
   }
   render(){
     return(
-      <Input
+      <Input style={searchStyle}
         onSubmit={this.queryValue}
         onKeyPress={this.queryEnterValue}
         icon={{
@@ -43,6 +43,12 @@ class Search extends React.Component{
       />
     )
   }
+}
+const searchStyle = {
+  height: 50,
+  width: 1000,
+  margin: 'auto',
+  backgroundColor: 'green',
 }
 
 export default Search
