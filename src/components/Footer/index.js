@@ -81,7 +81,9 @@ const Footer = () => (
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="10" cols="33"></textarea>
                 
-                <button type="submit" value="submit">Send</button></form>
+                <button type="submit" value="submit">Send</button>
+        </form>
+              } />
             </List>
           </Grid.Column>
         </Grid.Row>
@@ -91,3 +93,4 @@ const Footer = () => (
 )
 
 export default Footer
+
