@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@moltin/sdk": "^3.10.0",
+    "clarifai": "^2.9.0",
     "gatsby": "^1.9.76",
     "gatsby-image": "^1.0.51",
     "gatsby-link": "^1.6.39",
