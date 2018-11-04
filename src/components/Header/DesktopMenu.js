@@ -61,7 +61,7 @@ class DesktopMenu extends Component {
                 to="/magik/"
                 active={activeItem === withPrefix('/magik/')}
               >
-                Magik
+              Magik
               </Menu.Item>
               <Menu.Item
                 as={Link}
