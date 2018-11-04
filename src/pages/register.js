@@ -76,7 +76,11 @@ export default class Register extends React.Component {
               error={!!errors}
             >
               {errors ? this.handleErrors(errors) : null}
-              <Segment>
+              <Segment
+             style={{
+                border: `2px solid rgba(0, 0, 26, 0.7)`,
+                background: `rgb(153, 187, 255)`,
+                }}>
                 <Form.Field>
                   <label htmlFor="name">Name</label>
                   <Input
@@ -113,7 +117,7 @@ export default class Register extends React.Component {
                   />
                 </Form.Field>
 
-                <Button type="submit" color="orange">
+                <Button type="submit" color="blue" style={{display: `block`, margin: `auto`}}">
                   Register
                 </Button>
               </Segment>
