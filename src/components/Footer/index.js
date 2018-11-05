@@ -36,55 +36,15 @@ const Footer = () => (
               </List.Item>
             </List>
           </Grid.Column>
-          <Grid.Column width={7}>
-            <Header as="h4">Footer Header</Header>
-            <p>
-              Extra space for a call to action inside the footer that could help
-              re-engage users.
-            </p>
-            <List horizontal>
-              <List.Item
-                icon="twitter"
-                content={
-                  <a href="https://twitter.com/parmsang" alt="twitter link">
-                    Twitter
-                  </a>
-                }
-              />
-              <List.Item
-                icon="facebook"
-                content={
-                  <a href="https://facebook.com/" alt="facebook link">
-                    Facebook
-                  </a>
-                }
-              />
-              <List.Item
-                icon="mail"
-                content={
-                  <a href="#" alt="email link">
-                    Email
-                  </a>
-                }
-              />
-              <List.Item content={
-                
-                <form action="https://formspree.io/cremona.matei19@gmail.com" method="POST">
-        
-                <label for="name">Name:</label>
-                
-                <input type="text" name="name" placeholder="Name" style={{display: `block`, margin: `auto`}}/>
-                
-                <label for="email">Email:</label>
-                <input type="email" name="_replyto" placeholder="Email" style={{display: `block`, margin: `auto`}}/>
-                
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="10" cols="33"></textarea>
-                
-                <button type="submit" value="submit">Send</button>
-        </form>
-              } />
-            </List>
+          <Grid.Column width={5}>
+            <Header style={{textAlign: 'left'}} as="h4">Builders</Header>
+            <ul style={{listStyle: 'none'}}>
+              <li><a href='https://github.com/PhoeniXAbhisheK'>AbhisheK Yadav</a></li>
+              <li><a href='https://github.com/lindakovacs'>Linda Kovacs</a></li>
+              <li><a href='https://github.com/harshil1712'>Harshil Agrawal</a></li>
+              <li><a href='#'>Cremona Mateli</a></li>
+              <li><a href='https://github.com/RoniqueRicketts'>Ronique Ricketts</a></li>
+            </ul>
           </Grid.Column>
         </Grid.Row>
       </Grid>

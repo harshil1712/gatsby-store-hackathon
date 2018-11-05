@@ -139,6 +139,11 @@ class MobileMenu extends Component {
                   Home
                 </StyledLink>
                 <StyledDivider />
+
+                <StyledLink to="/magik/" onClick={this.handleClose}>
+                  Home
+                </StyledLink>
+                <StyledDivider />
                 <StyledLink to="/cart/" onClick={this.handleClose}>
                   {`Shopping Cart ${cartCount ? `(${cartCount})` : ''}`}
                 </StyledLink>
