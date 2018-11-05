@@ -117,7 +117,7 @@ export default class Register extends React.Component {
                   />
                 </Form.Field>
 
-                <Button type="submit" color="blue" style={{display: `block`, margin: `auto`}}">
+                <Button type="submit" color="blue" style={{display: `block`, margin: `auto`}}>
                   Register
                 </Button>
               </Segment>
