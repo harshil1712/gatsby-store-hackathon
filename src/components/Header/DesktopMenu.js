@@ -60,6 +60,7 @@ class DesktopMenu extends Component {
                 as={Link}
                 to="/magik/"
                 active={activeItem === withPrefix('/magik/')}
+          style={navbarStyle.textColor}
               >
               Magik
               </Menu.Item>
